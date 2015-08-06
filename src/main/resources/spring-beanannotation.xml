@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd" >
+        
+        <!-- 使用注解的话，该头文件比之前的头文件多了几行 xmlns:context，要注意！  -->
+        
+        <!-- spring容器会扫描该包（package）下面的类 -->
+        <context:component-scan base-package="com.imooc.beanannotation.jsr"></context:component-scan>
+        
+ </beans>
